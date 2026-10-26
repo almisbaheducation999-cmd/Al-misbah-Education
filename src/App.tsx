@@ -118,7 +118,7 @@ const DEFAULT_BOOKS: Book[] = [
     category: "Research",
     description:
       "A comprehensive study on Islamic analysis in the modern technological world.",
-    coverImage: "/src/assets/images/regenerated_image_1780745517708.jpg",
+    coverImage: "/assets/aistudio/Logo-Maktabah.png",
     fileName: "islamic_studies_v1.pdf",
     createdAt: Date.now() - 86400000 * 2,
   },
@@ -129,7 +129,7 @@ const DEFAULT_BOOKS: Book[] = [
     category: "Magazine",
     description:
       "Community news, spiritual insights, and artistic expressions.",
-    coverImage: "/src/assets/images/regenerated_image_1779181770796.jpg",
+    coverImage: "/assets/aistudio/Logo-Alfatih.png",
     fileName: "magazine_may_2026.pdf",
     createdAt: Date.now() - 86400000,
   },
@@ -140,7 +140,7 @@ const DEFAULT_BOOKS: Book[] = [
     category: "Innovation",
     description:
       "Exploring new methods in faith-based education through digital tools.",
-    coverImage: "/src/assets/images/regenerated_image_1779181774179.jpg",
+    coverImage: "/assets/aistudio/Logo-Oppm.png",
     fileName: "edutech_report.pdf",
     createdAt: Date.now(),
   },
@@ -151,9 +151,49 @@ const DEFAULT_BOOKS: Book[] = [
     category: "General",
     description:
       "Panduan integratif penyelamatan naskah klasik (turats) Islam melalui kecerdasan buatan dan preservasi digital.",
-    coverImage: "/src/assets/images/regenerated_image_1779181751763.png",
+    coverImage: "/assets/aistudio/Logo-tazakka.png",
     fileName: "heritage_preservation.pdf",
     createdAt: Date.now() - 86400000 * 3,
+  },
+];
+2. Bagian Data Kegiatan (DEFAULT_ACTIVITIES)
+TypeScript
+const DEFAULT_ACTIVITIES: Activity[] = [
+  {
+    id: "act-1",
+    title: "Kunjungan Studi Hubungan Internasional Universitas Gadjah Mada",
+    date: "2026-05-22",
+    category: "Kunjungan",
+    description:
+      "Diskusi panel interaktif mengenai studi riset Islam modern, tata kelola literasi, dan pengembangan peradaban digital berwawasan sains santri.",
+    imageUrl: "/assets/aistudio/Logo-Oppm.png",
+  },
+  {
+    id: "act-2",
+    title: "Peluncuran Publikasi Jurnal Analisis Fiqih Kontemporer Jilid IV",
+    date: "2026-05-18",
+    category: "Publikasi",
+    description:
+      "Peluncuran silsilah berkala riset ilmiah meneliti tinjauan hukum kedaulatan data digital umat Islam di era integrasi AI global.",
+    imageUrl: "/assets/aistudio/Logo-Alfatih.png",
+  },
+  {
+    id: "act-3",
+    title: "Workshop Metodologi Penulisan Karya Ilmiah & Studi Kitab Santri",
+    date: "2026-05-15",
+    category: "Akademik",
+    description:
+      "Bimbingan intensif bagi santri dalam pemanfaatan alat sirkulasi riset literatur digital di Darul Hikmah Library.",
+    imageUrl: "/assets/aistudio/Logo-Maktabah.png",
+  },
+  {
+    id: "act-4",
+    title: "Kajian Rutin Kepustakaan Menelaah Tafsir Al-Misbah Tematik",
+    date: "2026-05-10",
+    category: "Kajian",
+    description:
+      "Sesi kupas tuntas landasan keilmuan teknologi modern berasaskan ayat Al-Quran bersama para mufassir senior.",
+    imageUrl: "/assets/aistudio/Logo-tazakka.png",
   },
 ];
 
