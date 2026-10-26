@@ -151,14 +151,13 @@ const DEFAULT_BOOKS: Book[] = [
     category: "General",
     description:
       "Panduan integratif penyelamatan naskah klasik (turats) Islam melalui kecerdasan buatan dan preservasi digital.",
-    coverImage: "/assets/aistudio/Logo-tazakka.png",
+    coverImage: "/assets/aistudio/Logo-Tazakka.png",
     fileName: "heritage_preservation.pdf",
     createdAt: Date.now() - 86400000 * 3,
   },
 ];
 2. Bagian Data Kegiatan (DEFAULT_ACTIVITIES)
-TypeScript
-const DEFAULT_ACTIVITIES: Activity[] = [
+   const DEFAULT_ACTIVITIES: Activity[] = [
   {
     id: "act-1",
     title: "Kunjungan Studi Hubungan Internasional Universitas Gadjah Mada",
@@ -193,48 +192,11 @@ const DEFAULT_ACTIVITIES: Activity[] = [
     category: "Kajian",
     description:
       "Sesi kupas tuntas landasan keilmuan teknologi modern berasaskan ayat Al-Quran bersama para mufassir senior.",
-    imageUrl: "/assets/aistudio/Logo-tazakka.png",
+    imageUrl: "/assets/aistudio/Logo-Tazakka.png",
   },
 ];
 
-const DEFAULT_ACTIVITIES: Activity[] = [
-  {
-    id: "act-1",
-    title: "Kunjungan Studi Hubungan Internasional Universitas Gadjah Mada",
-    date: "2026-05-22",
-    category: "Kunjungan",
-    description:
-      "Diskusi panel interaktif mengenai studi riset Islam modern, tata kelola literasi, dan pengembangan peradaban digital berwawasan sains santri.",
-    imageUrl: "/src/assets/images/regenerated_image_1779181774179.jpg",
-  },
-  {
-    id: "act-2",
-    title: "Peluncuran Publikasi Jurnal Analisis Fiqih Kontemporer Jilid IV",
-    date: "2026-05-18",
-    category: "Publikasi",
-    description:
-      "Peluncuran silsilah berkala riset ilmiah meneliti tinjauan hukum kedaulatan data digital umat Islam di era integrasi AI global.",
-    imageUrl: "/src/assets/images/regenerated_image_1779181754635.png",
-  },
-  {
-    id: "act-3",
-    title: "Workshop Metodologi Penulisan Karya Ilmiah & Studi Kitab Santri",
-    date: "2026-05-15",
-    category: "Akademik",
-    description:
-      "Bimbingan intensif bagi santri dalam pemanfaatan alat sirkulasi riset literatur digital di Darul Hikmah Library.",
-    imageUrl: "/src/assets/images/regenerated_image_1779181770796.jpg",
-  },
-  {
-    id: "act-4",
-    title: "Kajian Rutin Kepustakaan Menelaah Tafsir Al-Misbah Tematik",
-    date: "2026-05-10",
-    category: "Kajian",
-    description:
-      "Sesi kupas tuntas landasan keilmuan teknologi modern berasaskan ayat Al-Quran bersama para mufassir senior.",
-    imageUrl: "/src/assets/images/regenerated_image_1779181774179.jpg",
-  },
-];
+co
 
 // --- SUB-VIEWS FOR TABS ---
 
@@ -825,7 +787,7 @@ function AiEngineView({
             className="w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center shadow-md shadow-blue-500/25 duration-300 hover:scale-105 active:scale-95"
           >
             <img
-              src="/src/assets/images/regenerated_image_1779182020555.png"
+             src="/assets/aistudio/Logo-Tazakka.png"
               alt="Logo"
               className="w-5 h-5 rounded-full object-contain invert brightness-200"
             />
@@ -7987,12 +7949,13 @@ export default function App() {
                     <Mic size={16} />
                   </button>
                   <button
-                    type="submit"
-                    disabled={!aiPrompt.trim() || isAiLoading}
-                    className="w-7 h-7 rounded-full bg-black dark:bg-white text-white dark:text-black flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed shadow-md transition-all active:scale-95 cursor-pointer"
-                  >
-                    <ChevronRight size={15} strokeWidth={2.5} />
-                  </button>
+                  type="submit"
+                  disabled={!prompt.trim() || isAiResponding}
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:opacity-40 disabled:hover:bg-blue-600 text-white rounded-full font-semibold text-xs transition-all shadow-md cursor-pointer flex items-center gap-1.5"
+                >
+                  <span>Kirim</span>
+                  <ChevronRight size={14} />
+                </button>
                 </div>
               </form>
 
